@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Add your custom CSS here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .hero-image {
+      background: url('your-hero-image.jpg') center/cover no-repeat;
+      padding: 150px 0;
+      text-align: center;
+    }
+    .logo {
+      width: 100px; /* Adjust the size of the logo */
+      height: auto;
+    }
+    .nav-link {
+      color: #fff;
+      font-weight: bold;
+    }
+    .nav-link:hover {
+      color: #ff9900; /* Change color on hover */
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .slider {
+      max-width: 100%;
+      height: auto;
+    }
+    .block {
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    .portfolio-item {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      border-radius: 5px;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header">
+    <img src="A.jpg" alt="Your Logo" class="logo">
+    <h1>Ankita Panpatil</h1>
+    <p>Web Developer | Designer</p>
+  </div>
+  
+  <div class="hero-image">
+    <div class="container">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Showcasing my web development and design projects</p>
+      <img src="B.png" alt="Hero Image" class="img-fluid">
+    </div>
+  </div>
+
+  <div class="container">
+    
+    <div class="block" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="Banner.jpg" alt="Profile Image" class="img-fluid rounded mb-4">
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-4">About Me</h2>
+            <p>I'm a passionate web developer and designer with a keen eye for detail. With a strong foundation in HTML, CSS, and JavaScript, I create engaging and user-friendly websites. My design skills allow me to craft stunning user interfaces that enhance the overall user experience.</p>
+            <p>Throughout my career, I have worked on a variety of projects, from personal websites to complex e-commerce platforms. I am dedicated to staying up-to-date with the latest technologies and design trends to deliver modern and impactful solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="block" id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card portfolio-card">
+              <img src="https://i.etsystatic.com/45834185/r/il/9629bb/5237325557/il_794xN.5237325557_g6sq.jpg" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card portfolio-card">
+              <img src="https://i.etsystatic.com/45834185/r/il/d12c44/5237320893/il_794xN.5237320893_s3u3.jpg" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card portfolio-card">
+              <img src="https://i.etsystatic.com/45834185/r/il/0eb5d0/5189089368/il_794xN.5189089368_1jll.jpg" class="card-img-top" alt="Project 3">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card portfolio-card">
+              <img src="https://i.etsystatic.com/45834185/r/il/1b0864/5189082026/il_794xN.5189082026_om77.jpg" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card portfolio-card">
+              <img src="https://i.etsystatic.com/45834185/r/il/bebdf1/5237301823/il_794xN.5237301823_kt5p.jpg" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card portfolio-card">
+              <img src="https://i.etsystatic.com/45834185/r/il/fd3470/5237296385/il_794xN.5237296385_6e4d.jpg" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="block bg-light" id="skills">
+      <div class="container">
+        <h2 class="text-center mb-5">Skills</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="skill-card p-4">
+              <h4 class="mb-4">Web Development</h4>
+              <canvas id="webDevelopmentChart"></canvas>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skill-card p-4">
+              <h4 class="mb-4">Design</h4>
+              <canvas id="designChart"></canvas>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skill-card p-4">
+              <h4 class="mb-4">Other</h4>
+              <canvas id="otherSkillsChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    
+    <div class="block bg-light" id="contact">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-info">
+              <h4>Contact Information</h4>
+              <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> your.email@example.com</li>
+                <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-form">
+              <h4>Send me a message</h4>
+              <form>
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <div class="footer">
+    <p>&copy; 2023 Your Portfolio. All rights reserved.</p>
+  </div>
+
+  <!-- Link Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Web Development Chart
+    var webDevelopmentChart = new Chart(document.getElementById("webDevelopmentChart"), {
+      type: 'doughnut',
+      data: {
+        labels: ['HTML5 / CSS3', 'JavaScript', 'React'],
+        datasets: [{
+          data: [90, 85, 80],
+          backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+        }]
+      }
+    });
+  
+    // Design Chart
+    var designChart = new Chart(document.getElementById("designChart"), {
+      type: 'bar',
+      data: {
+        labels: ['UI/UX Design', 'Adobe Creative Suite', 'Prototyping'],
+        datasets: [{
+          data: [75, 70, 60],
+          backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+        }]
+      }
+    });
+  
+    // Other Skills Chart
+    var otherSkillsChart = new Chart(document.getElementById("otherSkillsChart"), {
+      type: 'line',
+      data: {
+        labels: ['Project Management', 'Responsive Design', 'Version Control'],
+        datasets: [{
+          data: [80, 70, 65],
+          borderColor: '#FF6384',
+          fill: false
+        }]
+      }
+    });
+  </script>
+  
+</body>
+</html>
